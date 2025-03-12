@@ -1,0 +1,158 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: url('brown.jpg') no-repeat center center/cover;
+}
+
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.sidebar, .right-sidebar {
+    width: 20%;
+    background: linear-gradient(135deg, burlywood, rgb(39, 39, 39));
+    padding: 20px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+
+.content {
+    width: 60%;
+    padding: 20px;
+}
+
+
+.profile img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #15181b;
+    transition: transform 0.3s ease-in-out;
+}
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+
+.post-images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 12px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+
+.post-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, burlywood, rgb(39, 39, 39));
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.post-box input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid burlywood;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+.post-box input:focus {
+    border-color: #ffffff;
+}
+.post-box button {
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #000000, burlywood);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.post-box button:hover {
+    transform: scale(1.05);
+}
+
+
+.post {
+    background: linear-gradient(135deg, burlywood, rgb(0, 0, 0));
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #000000, burlywood);;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #000000, burlywood);;
+}
+
+
+.event, .friend-request {
+    background: linear-gradient(135deg, burlywood, rgb(175, 172, 172));
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    backdrop-filter: blur(5px);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .sidebar, .right-sidebar {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+}
